@@ -1,0 +1,32 @@
+In Azure API Management (APIM), these rules are called "Policies."
+
+Policies are a set of instructions that run automatically every time someone requests data from your API. They allow you to control traffic, tighten security, and clean up data without changing your actual backend code.
+
+Here are the most common and powerful rules you can enforce through APIM, broken down by category:
+
+1. Traffic Control Rules (Protecting your servers)
+These rules act like speed limits to ensure your backend systems don’t get overwhelmed or crashed by too many requests.
+
+Rate Limiting / Throttling: You can set a rule that says: "A user can only make 100 API calls per minute." If they try to make 101, APIM blocks them and says, "Too many requests, please wait."
+
+Quota Limits: This is for longer-term tracking. For example: "Free tier users can only make 5,000 calls per month." Once they hit 5,000, they are cut off until the next month or until they upgrade.
+
+Caching: If 10,000 people ask for the exact same weather data or product list within one minute, APIM can save (cache) the answer from the first request and hand it to the other 9,999 users directly. Your backend servers only have to do the work once.
+
+2. Security & Authentication Rules (Checking IDs)
+These rules make sure only authorized people can access your data.
+
+API Key Validation: Forcing users to pass a specific, unique code (an API Key) to get in. No key, no entry.
+
+JWT Token Verification (OAuth 2.0): This is a more advanced digital ID badge. APIM can check if the user is logged in correctly through systems like Microsoft Entra ID (formerly Azure AD) or Google, and verify that their login hasn't expired.
+
+IP Restriction (Whitelisting): You can block all traffic unless it comes from a specific, trusted company computer or partner network. For example: "Only allow requests coming from Partner Company X's office IP address."
+
+3. Transformation Rules (Translating the data)
+Sometimes, your backend speaks one language, but the mobile app using your API speaks another. APIM can translate on the fly.
+
+XML to JSON Conversion: Old backend systems often send data out in a bulky format called XML. Modern mobile apps hate XML and want a clean format called JSON. APIM can automatically convert XML to JSON instantly so your backend doesn't have to change.
+
+Stripping/Adding Headers: You can hide internal information. For example, you can create a rule that strips out internal server names or tech details from the response before it reaches the public, so hackers can't use that information against you.
+
+URL Rewriting: If your internal system has a messy URL like /v2/internal/services/get_user_data_v5, you can use APIM to make it look clean to the outside world, like /users.
