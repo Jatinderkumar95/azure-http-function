@@ -47,4 +47,10 @@ In computer networking, systems are thought of in "layers" (from Layer 1 to Laye
 * **Lower Layers (like Layer 4)** are blind. They only see computer numbers (IP addresses) and ports. They don't know if you are looking at a video, an image, or a checkout page. It's like a mailroom sorting letters based *only* on the zip code.
 * **Layer 7 is the "Application Layer."** This is the highest level. It means the Gateway can actually "read" the language of the internet (HTTP/HTTPS). It can see the actual URL, the text, and the cookies. It's like a mailroom clerk opening the letter, reading that it's an urgent bill, and personally running it to the accounting department.
 
-Does seeing it mapped out like a department store make the concept of "routing" and "Layer 7" click a bit better?
+
+Feature,Azure Application Gateway,Azure API Management (APIM)
+Primary Focus,"Web Apps & Traffic. Keeping websites online, fast, and protected from hackers.","Developers & APIs. Managing, securing, and analyzing data feeds (APIs)."
+Core Job,"Routes bulk web traffic, balances server loads, and provides a firewall.","Controls who can access data, limits request rates, and provides documentation."
+Target Audience,General website visitors and users.,"Developers, partners, and internal software engineers."
+"""Brain Power""",It doesn't look at the data inside the request; it just looks at where it's going.,"It inspects the request, checks tokens, modifies data formats, and tracks usage."
+Key Feature,Autoscaling servers and SSL decryption.,"Developer portal, API key generation, and usage analytics."
