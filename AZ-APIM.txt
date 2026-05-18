@@ -45,3 +45,32 @@ If you have an old, legacy system that you want to replace with a modern cloud s
 ---
 
 > **The Bottom Line:** Azure API Management turns raw, messy internal code into secure, organized, and easily shareable digital products.
+
+
+Q: What is Azure API Management and how does it benefit an organization?
+
+A: Azure API Management is a service that allows organizations to publish, manage, secure, and analyze APIs in a secure and scalable environment. It benefits organizations by providing a gateway to manage APIs consistently with built-in security and analytics, facilitating the externalization of services and data to developers and partners efficiently.
+
+Q: Can you explain how Azure API Management supports versioning and revision control?
+
+A: Azure API Management supports versioning by allowing multiple versions of the same API to be hosted simultaneously, enabling gradual migration and testing of new versions without disrupting existing users. Revision control facilitates minor changes and testing before publishing the changes to the API version in use.
+
+Q: What is Azure API Management?
+
+A: Azure API Management is a service offered by Microsoft Azure for managing, securing, and publishing APIs. It provides features such as API gateway, developer portal, policy enforcement, versioning, rate limiting, analytics, and developer engagement tools.
+
+Q: How does Azure API Management differ from Azure App Service?
+
+A: Azure API Management is focused on managing APIs, including exposing, securing, and monitoring them, while Azure App Service is focused on hosting and managing web applications, APIs, and mobile app backends.
+
+Q: Can Azure App Service be used to publish APIs into Azure API Management?
+
+A: Yes, Azure App Service can be used to host APIs that can then be published and managed through Azure API Management. This allows for enhanced security, monitoring, and developer management capabilities.
+
+Q: How many APIs can be monitored by Azure API Management?
+
+A: The number of APIs that can be monitored depends on the pricing tier and capacity unit (CU) of your API Management instance. For example, the Basic tier allows for 3 APIs, the Standard tier allows for 25 APIs, and the Premium tier allows for 200 APIs (which can be increased with additional purchase).
+
+Q: What are some key features of Azure API Management?
+
+A: Some key features of Azure API Management include API gateway, developer portal, policy enforcement, versioning, rate limiting, analytics, and developer engagement tools. These features help organizations manage, secure, and publish their APIs effectively.
